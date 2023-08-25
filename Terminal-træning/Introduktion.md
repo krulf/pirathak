@@ -23,7 +23,7 @@
 
 - '```glow```': Denne kommando kan også bruges til at læse filer med. Denne kommando kan vise tekst filer, lidt mere fanzy end '```cat```´. den bruges på samme måde som '```cat```´, '```glow tekstfil.md```'. Dette er en ekstra kommando vi har installeret, så det er ikke en kommando man kan bruge i alle terminaler.
 
-### Test de nye kommandoer
+### Opgave
 
 1. Prøv at se hvilke filer der er i denne her mappe.
-2. Skift til næste mappe, se om der er nogle skjulte filer, der kan læses.
+2. Skift til næste mappe, se om der er en skjult filer, der kan læses.
