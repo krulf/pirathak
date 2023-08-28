@@ -1,1 +1,3 @@
-Med cat får du vist en tekstfil, hvis du vil læse den fulde beskrivelse af pirathavnen skriv: glow pirathavn.md
+
+Med cat får du vist en tekstfil. Hvis du vil læse den fulde beskrivelse af pirathavnen formateret som markdown (filnavne ender med .md), så skriv: glow pirathavn.md
+

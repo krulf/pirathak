@@ -1,8 +1,8 @@
 # Pirathavnen
-Pirathavnen er som en skattekiste af eventyr og hemmeligheder, hvor bølgerne hvisker historier fra fjerne lande og havbrisen bærer drømme om skatte og skibseventyr. De to moler strækker sig ud som modige piratarme, der omfavner skibene og de spændende steder.
+Pirathavnen er som en skattekiste af eventyr, der åbner sig langs kysten. To stolte moler strækker sig ud i havet som piratarme, klar til at byde eventyrlystne sjæle velkommen. Vestmolen er som en gateway til udforskning med kartografen, hvor skattekort og verdenskort bliver til virkelighed. Skibsværftet, lageret og vodbinderiet emmer af kreativitet og forberedelse til de modige rejser ud på det åbne hav.
 
-På søndre mole er der et sted, hvor piraterne bygger deres skibe – du kan høre lyden af hamre og savklinger, der skaber magiske skibe klar til eventyr. Lagerbygningen gemmer på skjulte skatte, mens vodbinderiet vugger med duften af træ og havvind.
+På østmolen finder man piraternes hærdede sjæle samlet på piratbaren, hvor historier og drømme udveksles. Ved siden af ligger skibsprovianteringen klar til at forsyne besætningerne med alt, hvad de har brug for til deres eventyr. Redningstjenesten venter i kulisserne, klar til at hjælpe, hvis havet skulle vise sin vrede. Piratskibet, en stolt kaptajn, ligger fortøjret på østsiden af østmolen, klar til nye horisonter.
 
-På nordre mole vajer flagene stolt i vinden over piratbaren, hvor besætningerne deler historier og drømme, og redningstjenesten står klar til at hjælpe, hvis bølgerne bliver for vovede. Piratskibet ved mole-enden står som en stolt kaptajn, klar til at sejle ud på det uendelige hav.
+Fuglene danser i himlen som vagter for havnens hemmeligheder, og bølgerne hvisker om fortiden og fremtiden. I denne havn findes en stemning af mod og dristighed, hvor hver bygning er en dør til eventyr og hver bølge bærer en skjult skat.
 
-I havnen føler man det som om tiden står stille, og hvert sted er som en ny side i en bog fyldt med eventyr. Stemningen er fyldt med forventningens glæde og nysgerrighed, og man kan næsten mærke piraterne fra fortiden hviske i vinden og kalde på nye dristige sjæle, der ønsker at opdage det ukendte.
+Få vist alt hvad der er i pirathavnen med `ls`
