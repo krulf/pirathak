@@ -5,4 +5,4 @@ På østmolen finder man piraternes hærdede sjæle samlet på piratbaren, hvor 
 
 Fuglene danser i himlen som vagter for havnens hemmeligheder, og bølgerne hvisker om fortiden og fremtiden. I denne havn findes en stemning af mod og dristighed, hvor hver bygning er en dør til eventyr og hver bølge bærer en skjult skat.
 
-Få vist alt hvad der er i pirathavnen med `ls`
+Få vist hvad du kan i pirathavnen med `ls`
