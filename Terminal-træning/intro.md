@@ -18,4 +18,4 @@ Kaptajnen har gemt en besked et sted i filsystemet. Det er opbygget som en pirat
 + Vis en fil med `cat [filnavn]`
 	* Eksempel: vis filen besked med `cat besked`
 
-Start med at gå ind i labyrinten med `cd pirathavn`. Du kan altid få hjælp ved at skrive `hjælp` og gå tilbage til start med kommandoen `start`.
+Start med at gå ind i havnen `cd pirathavn`. Du kan altid få hjælp ved at skrive `hjælp` og gå tilbage til start med kommandoen `start`.
