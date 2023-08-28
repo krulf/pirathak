@@ -8,10 +8,12 @@ alias hjælp='glow $hjem/Terminal-træning/intro.md'
 alias start='clear && cd $hjem/Terminal-træning && glow intro.md'
 
 cd() {
-    if [[ $@ == "piratskibet" ]]; then
+    if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
         echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
-    elif [[ $@ == "pirathavn" ]]; then
+    elif [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
+	echo
 	echo "Velkommen til pirathavnen, tjek omgivelserne med: cat pirathavn"
+	echo
 	pushd $@>/dev/null
     else
         command cd "$@"
