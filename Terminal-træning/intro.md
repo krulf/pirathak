@@ -1,10 +1,10 @@
 # Er du klar til piratHAK?
 
 ## Så skal du lære terminalen...
-Der er gemt i en besked i filsystemets labyrint. Det er din mission at finde den. For at finde beskeden skal du navigere i filsystemet.
+Kaptajnen har gemt en besked et sted i filsystemet. Det er opbygget som en pirathavn. Det er din mission at finde den. Brug kommandoerne `ls, cd, cd .., pwd, cat`. Du kan altid få vist denne hjælp ved at skrive `hjælp` og begynde forfra ved at skrive `start`.
 
 ## Filsystemet består af filer og mapper
-+ *Mapper* kan du gå ind i og ud af
++ *Mapper* kan du gå ind i og ud af, som steder
 + *Filer* har et indhold der kan vises
 
 # Mapper
@@ -18,4 +18,4 @@ Der er gemt i en besked i filsystemets labyrint. Det er din mission at finde den
 + Vis en fil med `cat [filnavn]`
 	* Eksempel: vis filen besked med `cat besked`
 
-Start med at gå ind i labyrinten med `cd labyrinten`. Du kan altid få hjælp ved at skrive `hjælp` og gå tilbage til start med kommandoen `start`.
+Start med at gå ind i labyrinten med `cd pirathavn`. Du kan altid få hjælp ved at skrive `hjælp` og gå tilbage til start med kommandoen `start`.
