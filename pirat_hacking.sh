@@ -13,7 +13,4 @@ fi
 
 sudo apt update && sudo apt install glow
 
-bash
-source aliasdef
-start
-$SHELL
+bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
