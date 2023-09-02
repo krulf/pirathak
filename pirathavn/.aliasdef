@@ -4,8 +4,8 @@
 hjem=$(pwd)
 
 # Sæt hjælp og nulstil til første opgave
-alias hjælp='glow $hjem/Terminal-træning/intro.md'
-alias start='clear && cd $hjem/Terminal-træning && glow intro.md'
+alias hjælp='glow $hjem/pirathavn/.intro.md'
+alias start='clear && cd $hjem/pirathavn && glow .intro.md'
 
 cd() {
     if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
