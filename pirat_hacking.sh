@@ -12,9 +12,13 @@ if [ ! -f /etc/apt/keyrings/charm.gpg ]; then
 fi
 
 dpkg -s glow #is glow installed?
-
 if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install glow
+fi
+
+dpkg -s libmikmod3 #is libmikmod installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install libmikmod3
 fi
 
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
