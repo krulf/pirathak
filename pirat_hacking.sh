@@ -11,7 +11,11 @@ if [ ! -f /etc/apt/keyrings/charm.gpg ]; then
 	echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
 fi
 
-sudo apt update && sudo apt install glow
+dpkg -s glow #is glow installed?
+
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install glow
+fi
 
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
 
