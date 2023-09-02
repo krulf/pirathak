@@ -19,5 +19,7 @@ fi
 
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
 
-source aliasdef-zsh
-start
+echo
+echo Skriv:
+echo source aliasdef-zsh
+echo start
