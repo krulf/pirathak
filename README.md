@@ -1,6 +1,23 @@
 # pirathak
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+### TODO
+
+- ***Pirathavnen***
+   - Skal der tilføjes noget, i forhold til hvordan man bruger papegøjen på pirathavnen?
+- ***Vestmolen***
+   - Skibsværftets scripts -> mangler funktionalitet...!
+   - Lageret mangler en beskrivelse af komandoer, til håndtering af kompimerede filer
+   - Kartografen -> er helt tom
+- ***Østmolen***
+   - Piratbaren -> er helt tom
+   - Redningstjenesten -> er helt tom
+   - Skibsproviantering -> er helt tom
+   - Vaskeriet -> er helt tom
+
+---
+---
+
 Uge 36/ 6.september: introduktion terminal, filer, directories
  - Piraterne skal kunne forstå filstruktur i homedirectory
  - Skal kunne bevæge sig i filstrukturen, komme hjem, lave filer, directories
