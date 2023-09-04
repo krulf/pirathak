@@ -1,3 +1,54 @@
 #!/bin/bash
 
-echo Vigtig pointe!
+echo "ls -a">.hemmeligfil
+
+echo -e "# Kisten\n...åbner med en knagende lyd. Du kan som nævnt finde ud af hvor du er henne med \`pwd\`:" | glow
+echo "`pwd`" | glow
+echo "Men prøv engang \`tree\` kommandoen. Den giver dig et kort lige der hvor du er:" | glow
+echo "$(tree -a)" | glow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
