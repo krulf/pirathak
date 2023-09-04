@@ -7,7 +7,6 @@
    - Skibsværftets scripts -> mangler funktionalitet...!
 - ***Østmolen***
    - Piratbaren -> er helt tom
-   - Redningstjenesten -> er helt tom
    - Skibsproviantering -> er helt tom
    - Vaskeriet -> er helt tom
 
