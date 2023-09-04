@@ -3,8 +3,6 @@
 
 ### TODO
 
-- ***Pirathavnen***
-   - Skal der tilføjes noget, i forhold til hvordan man bruger papegøjen på pirathavnen?
 - ***Vestmolen***
    - Skibsværftets scripts -> mangler funktionalitet...!
    - Lageret mangler en beskrivelse af komandoer, til håndtering af kompimerede filer
