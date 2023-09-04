@@ -8,7 +8,6 @@
 - ***Vestmolen***
    - Skibsværftets scripts -> mangler funktionalitet...!
    - Lageret mangler en beskrivelse af komandoer, til håndtering af kompimerede filer
-   - Kartografen -> er helt tom
 - ***Østmolen***
    - Piratbaren -> er helt tom
    - Redningstjenesten -> er helt tom
