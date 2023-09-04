@@ -3,10 +3,6 @@
 # Sæt hjem
 hjem=$(pwd)
 
-glow() {
-    command glow -p "$@"
-}
-
 hjælp() {
     glow $hjem/Terminal-træning/intro.md
 }
