@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/krulf/pirathak.git
+git clone --branch pirathavn https://github.com/krulf/pirathak.git pirathavn
 
 if [ ! -d /etc/apt/keyrings ]; then
 	sudo mkdir -p /etc/apt/keyrings
@@ -21,9 +21,6 @@ if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install libmikmod3
 fi
 
+cd pirathavn
+source .aliasdef-zsh
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
-
-echo
-echo Skriv:
-echo source aliasdef-zsh
-echo start
