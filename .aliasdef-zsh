@@ -16,6 +16,8 @@ start() {
 cd() {
     if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
         echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
+    elif [[ $@ == "gemmested" ]] || [[ $@ == "gemmested/" ]]; then
+        echo "Fedt du slap væk..!"
     elif [[ -d pirathavn ]] && [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
 	echo
 	echo "Velkommen til pirathavnen, tjek omgivelserne med: cat pirathavn"
