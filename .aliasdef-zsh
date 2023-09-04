@@ -3,20 +3,26 @@
 # Sæt hjem
 hjem=$(pwd)
 
-# Sæt hjælp og nulstil til første opgave
-alias hjælp='glow $hjem/pirathavn/.intro.md'
-alias start='clear && cd $hjem/pirathavn && glow .intro.md'
+hjælp() {
+    glow $hjem/Terminal-træning/intro.md
+}
+
+start() {
+    clear
+    cd $hjem/Terminal-træning
+    glow intro.md
+}
 
 cd() {
     if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
         echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
-    elif [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
+    elif [[ -d pirathavn ]] && [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
 	echo
 	echo "Velkommen til pirathavnen, tjek omgivelserne med: cat pirathavn"
 	echo
-	pushd $@>/dev/null
+	builtin cd "$@"
     else
-        command cd "$@"
+        builtin cd "$@"
     fi
 }
 
