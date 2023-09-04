@@ -8,4 +8,4 @@ Men den sande magi ved terminalen er ikke kun i dens tekniske kapacitet, det er 
 
 Det er en indsigt, der strækker sig ud over den digitale sfære. Det er en påmindelse om, at friheden til at udforske og forstå er en uvurderlig gave. Det er kernen i at være en ægte hacker - at tage kontrol over din skæbne og udforske horisonterne foran dig, uanset hvor skræmmende de kan virke.
 
-Kør kommandoen `skattekiste`. Det gør du ved foran kommandoen at skrive punktum-slash: `./`
+Kør kommandoen `kistemedenskat`. Det gør du ved foran kommandoen at skrive punktum-slash: `./`
