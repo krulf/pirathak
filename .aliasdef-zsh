@@ -4,13 +4,13 @@
 hjem=$(pwd)
 
 hjælp() {
-    glow $hjem/Terminal-træning/intro.md
+    glow $hjem/.intro.md
 }
 
 start() {
     clear
-    cd $hjem/Terminal-træning
-    glow intro.md
+    cd $hjem
+    glow .intro.md
 }
 
 cd() {
