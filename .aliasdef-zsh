@@ -26,4 +26,4 @@ cd() {
     fi
 }
 
-alias opgave3='echo "# Sådan det køre....\n\n### virker det..?" >> næste_opgave.md | glow næste_opgave.md'
+alias piratflag='echo "# Sådan matroser....\n\n### Sådan, mine piratvenner! I har nu fuldført opgaven og kan gå videre. Må vinden altid være i jeres sejl, og må skattejagterne aldrig ende!\n\nLykke og held! 🏴‍☠️💰" >> .næste_opgave.md | glow .næste_opgave.md'
