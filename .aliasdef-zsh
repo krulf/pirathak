@@ -19,15 +19,30 @@ start() {
 cd() {
     if [[ "$@" == *"piratskibet"* ]]; then
 	if [[ $gemtbesked = 0 ]]; then
+		echo
 	        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
+		echo
 	elif [[ $gemtbesked = 1 ]] && [[ $pape = 0 ]]; then
+		echo
 		echo "Du må besejre den skeløjede papegøje"
+		echo
 	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]]; then
+		echo
+		echo "Du snakke med den trehovedede abe på piratbaren"
+		echo
+	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ abe = 1 ]]; then
+		export starttime=$(cat $hjem/.starttime)
+		export endtime=$(date +%s)
+		export duration=$(($endtime - $starttime))
+		echo
+		echo "Whoaa! Tillykke du er kommet ombord! Det tog dig $(date -d@$duration -u +%H:%M:%S) sekunder"
+		echo
 		builtin cd "$@"
 	fi
     elif [[ $@ == "gemmested" ]] || [[ $@ == "gemmested/" ]]; then
         echo "Fedt du slap væk..!"
     elif [[ -d pirathavn ]] && [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
+	echo $(date +%s)>$hjem/.starttime
 	echo
 	echo "Velkommen til pirathavnen, tjek omgivelserne med: cat pirathavn"
 	echo
