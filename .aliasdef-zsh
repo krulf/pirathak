@@ -26,7 +26,7 @@ cd() {
 		echo
 		echo "Du må besejre den skeløjede papegøje"
 		echo
-	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 0 ]]; then
 		echo
 		echo "Du skal snakke med den trehovedede abe på piratbaren"
 		echo
