@@ -22,15 +22,19 @@ cd() {
 		echo
 	        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
 		echo
-	elif [[ $gemtbesked = 1 ]] && [[ $pape = 0 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $piratflag = 0 ]]; then
+		echo 
+		echo "Du skal finde koden hos kartografen på vestmolen..."
+		echo
+	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 0 ]]; then
 		echo
 		echo "Du må besejre den skeløjede papegøje"
 		echo
-	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 0 ]]; then
+	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 0 ]]; then
 		echo
 		echo "Du skal snakke med den trehovedede abe på piratbaren"
 		echo
-	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 1 ]]; then
+	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 1 ]]; then
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
