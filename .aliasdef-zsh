@@ -17,12 +17,12 @@ start() {
 }
 
 cd() {
-    if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
-	if [[ gemtbesked = 0 ]]; then
+    if [[ "$@" == *"piratskibet"* ]]; then
+	if [[ $gemtbesked = 0 ]]; then
 	        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
-	elif [[ pape = 0 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $pape = 0 ]]; then
 		echo "Du må besejre den skeløjede papegøje"
-	else
+	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]]; then
 		builtin cd "$@"
 	fi
     elif [[ $@ == "gemmested" ]] || [[ $@ == "gemmested/" ]]; then
