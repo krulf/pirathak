@@ -77,11 +77,11 @@ else
     mv papegøje .papegøje
     echo "Du kan nu hovere over papegøjen ved at lave en variabel 'pape':"
     echo
-    echo "export pape=1
+    echo "export pape=1"
     echo
     echo "Tjek frugten af dit hårde arbejde med:"
     echo 
-    echo "echo $pape"
+    echo "echo \$pape"
     echo 
 fi
 

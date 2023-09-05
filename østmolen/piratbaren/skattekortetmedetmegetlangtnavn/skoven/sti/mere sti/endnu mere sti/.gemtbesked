@@ -13,7 +13,7 @@ echo "export gemtbesked=1"
 echo
 echo "Du kan tjekke at du har gemt variablen ved at skrive:"
 echo 
-echo echo $gemtbesked
+echo echo \$gemtbesked
 echo
 
 
