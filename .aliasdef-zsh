@@ -28,9 +28,9 @@ cd() {
 		echo
 	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]]; then
 		echo
-		echo "Du snakke med den trehovedede abe på piratbaren"
+		echo "Du skal snakke med den trehovedede abe på piratbaren"
 		echo
-	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ abe = 1 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 1 ]]; then
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
