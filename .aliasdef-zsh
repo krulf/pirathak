@@ -53,7 +53,7 @@ echo() {
 		builtin echo
 		builtin echo -e "Du kan nu sætte variablen abe til 1 med kommandoen:\n\nexport abe=1"
 		builtin echo 
-		builtin echo -e "# BoboCocoLoco\nLiget af den trehovedede abe ligger og det er et skræmmende og foruroligende syn. Dens tre hoveder er kastet tilbage i en uhyggelig vrangstilling, med åbne munde, der stadig ser ud til at råbe og skænde, selv i døden. Øjnene er udtværet i en skræmmende grimasse af smerte, og den kolde havbrise får dens pels til at bølge som spøgelsesagtige skygger.\n\nDe omkringliggende måger er tavse og er flygtet væk. Stilheden er kun afbrudt af de dystre bølgers sagte klukken. Det er som om, østmolen selv bærer ar fra den trehovedede abes gruopvækkende død, og det sender en kuldegysning ned ad ryggen på enhver, der tør nærme sig.\n\n">$hjem/pirathavn/østmolen/trehovedetabe.md
+		builtin echo -e "# BoboCocoLoco\nLiget af den trehovedede abe ligger og det er et skræmmende og foruroligende syn. Dens tre hoveder er kastet tilbage i en uhyggelig vrangstilling, med åbne munde, der stadig ser ud til at råbe og skænde, selv i døden. Øjnene er udtværet i en skræmmende grimasse af smerte, og den kolde havbrise får dens pels til at bølge som spøgelsesagtige skygger.\n\nDe omkringliggende måger er tavse og er flygtet væk. Stilheden er kun afbrudt af de dystre bølgers sagte klukken. Det er som om, østmolen selv bærer ar fra den trehovedede abes gruopvækkende død, og det sender en kuldegysning ned ad ryggen på enhver, der tør nærme sig.\n\n">$hjem/østmolen/trehovedetabe.md
 		rm trehovedetabe.md
 	elif [[ "$@" == "Skatteko"* ]]; then
 		builtin echo
