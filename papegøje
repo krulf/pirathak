@@ -74,8 +74,15 @@ else
     echo
     echo "Tillykke! Du har besejret den skeløjede papegøje! Papegøjen flyver op på toppen af skibsværftet, hvor du kan høre den sidder og knurrer!"
     echo
-    echo mv papegøje .papegøje
-    export papegøje=1
+    mv papegøje .papegøje
+    echo "Du kan nu hovere over papegøjen ved at lave en variabel 'pape':"
+    echo
+    echo "export pape=1
+    echo
+    echo "Tjek frugten af dit hårde arbejde med:"
+    echo 
+    echo "echo $pape"
+    echo 
 fi
 
 exit 0

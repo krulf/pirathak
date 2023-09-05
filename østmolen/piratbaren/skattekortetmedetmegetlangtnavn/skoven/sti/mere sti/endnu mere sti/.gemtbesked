@@ -1,14 +1,20 @@
 #!/bin/bash
-export gemtbesked=1
-echo "Tillykke: Du har fundet kaptajnens gLemte besked!
+echo
+echo "Tillykke: Du har fundet kaptajnens gLemte besked!"
 echo 
-echo      ____________
-echo     / |<--       \
-echo    |   -->|      |
-echo     \____________/
+echo "     ____________"
+echo "    / |<--       \\"
+echo "   |   -->|      |"
+echo "    \____________/"
 echo 
-
-
+echo "Skriv nu følgende kommando for at lave en variabel 'gemtbesked':"
+echo
+echo "export gemtbesked=1"
+echo
+echo "Du kan tjekke at du har gemt variablen ved at skrive:"
+echo 
+echo echo $gemtbesked
+echo
 
 
 
