@@ -74,7 +74,7 @@ else
     echo
     echo "Tillykke! Du har besejret den skeløjede papegøje! Papegøjen flyver op på toppen af skibsværftet, hvor du kan høre den sidder og knurrer!"
     echo
-    mv papegøje .papegøje
+    rm papegøje
     echo "Du kan nu hovere over papegøjen ved at lave en variabel 'pape':"
     echo
     echo "export pape=1"
