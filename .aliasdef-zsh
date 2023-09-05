@@ -81,4 +81,4 @@ echo() {
 	fi
 }
 
-alias piratflag='echo "# Sådan matroser....\n\n###I har nu fuldført denne opgaven og kan gå videre. Må vinden altid være i jeres sejl, og må skattejagterne aldrig ende!\n\nLykke og held! 🏴‍☠️💰" >> .næste_opgave.md | glow .næste_opgave.md'
+alias piratflag='echo "# Sådan matroser....\n\n###I har nu fuldført denne opgave og kan gå videre. Må vinden altid være i jeres sejl, og må skattejagterne aldrig ende!\n\nLykke og held! 🏴‍☠️💰" | glow .næste_opgave.md'
