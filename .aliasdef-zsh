@@ -43,10 +43,6 @@ echo() {
 		builtin echo 
 		builtin echo "Hoved 2: Arrrh nej, det var ikke Isolering, men Loddetin - skriv det pirataspirant!"
 		builtin echo
-	elif [[ "$@" == "Skatteko"* ]]; then
-		builtin echo
-		builtin echo "Hoved $((1 + $RANDOM % 3)): Aaaarh! Prøv igen!"
-		builtin echo 
 	elif [[ "$@" == "Skattekortet er begravet på øen Loddetin" ]]; then
 		builtin echo
 		builtin echo "Hoved 1: Fjumrehoveder! Det var da slet ikke en skat! Skriv i stedet: Skattekortet er blevet væk"
@@ -55,6 +51,10 @@ echo() {
 		builtin echo
 		builtin echo -e "Du træder lidt væk, da abens tre hoveder begynder at råbe og skrige og bide efter hinanden.\n\nKort efter løber aben ud af døren."
 		builtin echo
+	elif [[ "$@" == "Skatteko"* ]]; then
+		builtin echo
+		builtin echo "Hoved $((1 + $RANDOM % 3)): Aaaarh! Prøv igen!"
+		builtin echo 
 	else
 		builtin echo "$@"
 	fi
