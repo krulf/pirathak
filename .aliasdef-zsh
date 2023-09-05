@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export gemtbesked=0
+export papegøje=0
+
 # Sæt hjem
 hjem=$(pwd)/pirathavn
 
@@ -15,7 +18,13 @@ start() {
 
 cd() {
     if [[ $@ == "piratskibet" ]] || [[ $@ == "piratskibet/" ]]; then
-        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
+	if [[ gemtbesked == 0 ]]; then
+	        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
+	elif [[ papegøje == 0 ]]; then
+		echo "Du må besejre den skeløjede papegøje"
+	else
+		builtin cd "$@"
+	fi
     elif [[ $@ == "gemmested" ]] || [[ $@ == "gemmested/" ]]; then
         echo "Fedt du slap væk..!"
     elif [[ -d pirathavn ]] && [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then

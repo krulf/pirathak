@@ -74,7 +74,8 @@ else
     echo
     echo "Tillykke! Du har besejret den skeløjede papegøje! Papegøjen flyver op på toppen af skibsværftet, hvor du kan høre den sidder og knurrer!"
     echo
-    echo mv papegøje ../
+    echo mv papegøje .papegøje
+    export papegøje=1
 fi
 
 exit 0
@@ -136,3 +137,4 @@ exit 0
 
 
 
+# Dette er et script som du skal køre. Ved du hvordan?

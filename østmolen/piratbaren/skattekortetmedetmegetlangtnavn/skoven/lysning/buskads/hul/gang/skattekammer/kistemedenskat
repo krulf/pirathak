@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "ls -a">.hemmeligfil
+echo -e "Du finder hemmelige filer med: ls -a\n\nJeg gemte engang en besked ved afgrunden...">.hemmeligfil
 
 echo -e "# Kisten\n...åbner med en knagende lyd. Du kan som nævnt finde ud af hvor du er henne med \`pwd\`:" | glow
 echo "`pwd`" | glow
@@ -52,3 +52,4 @@ echo "$(tree -a)" | glow
 
 
 
+# Dette er et script der skal køres...

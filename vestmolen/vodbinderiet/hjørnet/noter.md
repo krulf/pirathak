@@ -8,3 +8,5 @@ Når filen er samlet korrekt kan du køre den som et program. Brug kommandoen `c
 
 Kør herefter programmet - god fornøjelse!
 
+Hvordan du kører programmet finder du af med skattekortet i piratbaren!
+
