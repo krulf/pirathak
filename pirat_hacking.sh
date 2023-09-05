@@ -21,9 +21,6 @@ if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install libmikmod3
 fi
 
-cd pirathavn
-source .aliasdef-zsh
-
 clear
-start
+hjælp
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
