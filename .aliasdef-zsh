@@ -16,8 +16,10 @@ start() {
     glow .intro.md
 }
 
+# den røde tråd
+
 cd() {
-    if [[ "$@" == *"piratskibet"* ]]; then
+    if [[ "$@" == *"piratskibet" ]] || [[ "$@" == *"piratskibet/" ]]; then
 	if [[ $gemtbesked = 0 ]]; then
 		echo
 	        echo "Kaptajnen vil have du finder beskeden før du kommer ombord"
@@ -26,15 +28,15 @@ cd() {
 		echo 
 		echo "Du skal finde koden hos kartografen på vestmolen..."
 		echo
-	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 0 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $piratflag = 1 ]] && [[ $pape = 0 ]]; then
 		echo
 		echo "Du må besejre den skeløjede papegøje"
 		echo
-	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 0 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $piratflag = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 0 ]]; then
 		echo
 		echo "Du skal snakke med den trehovedede abe på piratbaren"
 		echo
-	elif [[ $piratflag = 1 ]] && [[ $gemtbesked = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 1 ]]; then
+	elif [[ $gemtbesked = 1 ]] && [[ $piratflag = 1 ]] && [[ $pape = 1 ]] && [[ $abe = 1 ]]; then
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
@@ -45,9 +47,9 @@ cd() {
 		echo
 		builtin cd "$@"
 	fi
-    elif [[ $@ == "gemmested" ]] || [[ $@ == "gemmested/" ]]; then
+    elif [[ "$@" == "gemmested" ]] || [[ "$@" == "gemmested/" ]]; then
         echo "Fedt du slap væk..!"
-    elif [[ -d pirathavn ]] && [[ $@ == "pirathavn" ]] || [[ $@ == "pirathavn/" ]]; then
+    elif [[ -d pirathavn ]] && [[ "$@" == "pirathavn" ]] || [[ "$@" == "pirathavn/" ]]; then
 	echo $(date +%s)>$hjem/.starttime
 	echo
 	echo "Velkommen til pirathavnen, tjek omgivelserne med: cat pirathavn"
