@@ -35,7 +35,9 @@ cd() {
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
 		echo
-		echo "Whoaa! Tillykke du er kommet ombord! Det tog dig $(date -d@$duration -u +%H:%M:%S) sekunder"
+		echo "Whoaa! Tillykke du er kommet ombord! Det tog dig $(date -d@$duration -u +%H:%M:%S)."
+		echo 
+		echo "Rejs dig op og sig AAAARH!"
 		echo
 		builtin cd "$@"
 	fi
