@@ -7,6 +7,7 @@ export gemmested=0
 export gemtbesked=0
 export piratflag=0
 export abe=0
+export guldkiste=0
 
 opgave_array=(	"klare papegøjen på pirathavnen"
 		"åbne kisterne i lageret på vestmolen"
@@ -14,9 +15,12 @@ opgave_array=(	"klare papegøjen på pirathavnen"
 		"finde kaptajnens gemte besked på skattekortet i piratbaren på østmolen"
 		"finde koden hos kartografen på vestmolen"
 		"snakke med den trehovedede abe i piratbaren på østmolen"
+		"åbne guldkisten i skibsværftet"
 		)
 
-hvadnu() { opgave=0 if [[ $pape = 1 ]]; then
+hvadnu() {
+	opgave=0
+	if [[ $pape = 1 ]]; then
 	  opgave=$((opgave+1))
 	  if [[ $lager = 1 ]]; then
 	    opgave=$((opgave+1))
@@ -24,24 +28,25 @@ hvadnu() { opgave=0 if [[ $pape = 1 ]]; then
 	      opgave=$((opgave+1))
 	      if [[ $gemtbesked = 1 ]]; then
 	        opgave=$((opgave+1))
-		if [[ $piratflag = ]]; then
+		if [[ $piratflag = 1 ]]; then
 		  opgave=$((opgave+1))
 		  if [[ $abe = 1 ]]; then
 		    opgave=$((opgave+1))
+                    if [[ $guldkiste = 1 ]]; then
+		      opgave=$((opgave+1))
+                    fi
 		  fi
 		fi
               fi
             fi
 	  fi
 	fi
-	echo "Du skal:"$opgave_array[$opgave]
+	echo -e "# Næste udfordring\n - Du skal ${opgave_array[$opgave]}"|glow
 }
-
-
 
 cd() {
     if [[ "$@" == *"piratskibet" ]] || [[ "$@" == *"piratskibet/" ]]; then
-	if [[ "$(hvadnu)" == "fisk" ]]; then
+	if [[ "$(hvadnu)" == "${opgave_array[7]}" ]]; then
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
