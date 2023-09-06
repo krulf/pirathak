@@ -16,9 +16,7 @@ opgave_array=(	"klare papegøjen på pirathavnen"
 		"snakke med den trehovedede abe i piratbaren på østmolen"
 		)
 
-hvadnu() {
-	opgave=0
-	if [[ $pape = 1 ]]; then
+hvadnu() { opgave=0 if [[ $pape = 1 ]]; then
 	  opgave=$((opgave+1))
 	  if [[ $lager = 1 ]]; then
 	    opgave=$((opgave+1))
