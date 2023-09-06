@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cooldown_period=33
 current_time=$(date +%s)
 
 if [ -f ".cooldown" ]; then
@@ -11,7 +10,9 @@ if [ -f ".cooldown" ]; then
 		echo
 	else
 		echo
-		echo "Papegøjen kigger på dig og horisonten med foragt: du er ikke en værdig modstander!"
+		echo "Du er ikke en værdig modstander!"
+		echo
+		echo "Vent til du har sundet dig... $(($(cat .cooldown) - $current_time)) sekunder."
 		echo
 		exit 0
 	fi
@@ -37,7 +38,8 @@ echo "Papegøjen ser på dig og siger med en hæs stemme: 'Du er så værdiløs,
 echo
 
 while [ $player_life -gt 0 ] && [ $parrot_life -gt 0 ]; do
-    echo ""
+    clear
+    echo
     echo "Dit liv: $player_life | Papegøjens liv: $parrot_life"
     echo "Hvad gør du?"
     echo "1. Fornærmer papegøjen."
@@ -68,21 +70,13 @@ if [ $player_life -le 0 ]; then
     echo
     echo "Den skeløjede papegøje skriger: find en ligeværdig modstander!"
     echo "Du kigger slukøret på den prægtige og hoverende fugl!"
-    echo
-    echo $(date +%s)>.cooldown
+    current_time=$(date +%s)
+    cooldown_period=$((13 + $RANDOM % 27))
+    echo $(($current_time + $cooldown_period))>.cooldown
+    echo -e "# Du har TABT!\n - vent til du har sundet dig.... $(($(cat .cooldown) - $current_time)) sekunder" | glow
 else
-    echo
-    echo "Tillykke! Du har besejret den skeløjede papegøje! Papegøjen flyver op på toppen af skibsværftet, hvor du kan høre den sidder og knurrer!"
-    echo
-    rm papegøje
-    echo "Du kan nu hovere over papegøjen ved at lave en variabel 'pape':"
-    echo
-    echo "export pape=1"
-    echo
-    echo "Tjek frugten af dit hårde arbejde med:"
-    echo 
-    echo "echo \$pape"
-    echo 
+    #rm papegøje
+    echo -e "# Tillykke!\nDu har besejret den skeløjede papegøje! Papegøjen flyver op på toppen af vodbinderiet, hvor du kan høre den sidder og knurrer...\nFør du går videre skal du lave variablen pape med:\n - \`export pape=1\`\n\nTjek hvor du skal hen med \`hvadnu\`" | glow
 fi
 
 exit 0
