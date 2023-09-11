@@ -14,10 +14,10 @@
   3. til sidst skriver man ```-o [filnavn]``` som fortæller hvor alle kombinationerne skal gemmes.
 
 ***Eksempel***
-- Her er et eksempel, hvor der oprettes en fil ***minOrdbog***, der inde holder alle kombinationer med 2-3 bogstaver.
-```bash
-crunch 2 3 -o minOrdbog
-```
+- Her er et eksempel, hvor der oprettes en fil ***minOrdbog***, der indeholder alle kombinationer med 2-3 bogstaver.
+<br>
+```crunch 2 3 -o minOrdbog```
+<br>
 - Nu er det din opgave at oprette en fil, udfra beskrivelsen i toppen af denne fil.
 - Prøv at læse den fil du har oprettet, så kan du se hvor mange muligheder der skal prøves af, for at gætte koden..!
 
@@ -25,18 +25,14 @@ crunch 2 3 -o minOrdbog
 
 ### For at åbne guldkisten skal vi bruge en lidt svære kommando: 
 - **Denne kommando hedder ```fcrackzip```.**
-- Neden for kan ses et eksempel, hvor der bruges minOrdbog, fra eksempelt ovenfor, til at åbne en fil der hedder ***låst.zip***:
+- Nedenfor kan ses et eksempel, hvor der bruges minOrdbog, fra eksempelt ovenfor, til at åbne en fil der hedder ***låst.zip***:
 
-```bash
-fcrackzip -u -D -p minOrdbog -v låst.zip
-```
+```fcrackzip -u -D -p minOrdbog -v låst.zip```
 
 - Efter man har kørt kommandoen til ```fcrackzip```, vil der stå hvis den har fundet passwordet. eks:
 
 
-```bash
-PASSWORD FOUND!!!!: pw == afb
-```
+```PASSWORD FOUND!!!!: pw == afb```
 
 - Passwordet, der skal bruges til at ```unzip låst.zip``` er de sidste tegn efter de to *==* tegn. i eksempelt er koden ```afb```.
 - Åbn guldkisten og se hvad der gemmer sig i den. 
