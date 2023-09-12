@@ -81,7 +81,7 @@ cd() {
 		echo
 		builtin cd "$@"
 	else
-		echo -e "# Du er ikke klar til at komme ombord!\n \n # $(hvadnu)"|glow
+		echo -e "# Du er ikke klar til at komme ombord!\n$(hvadnu)"|glow
 	fi
     elif [[ "$@" == "gemmested" ]] || [[ "$@" == "gemmested/" ]]; then
         echo '
