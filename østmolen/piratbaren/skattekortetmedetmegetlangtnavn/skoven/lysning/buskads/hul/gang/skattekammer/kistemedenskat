@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-echo -e '\n\n\nDu finder hemmelige filer med: ls -a\n\nJeg gemte engang en besked ved afgrunden...>.hemmeligfil
+echo -e '\n\n\nDu finder hemmelige filer med: ls -a\n\nJeg gemte engang en besked ved afgrunden... Du ved når du kommer ind i skoven så følg stien og gå helt til afgrunden!>.hemmeligfil
 
 echo -e "# Kisten\n...åbner med en knagende lyd. Du kan som nævnt finde ud af hvor du er henne med \`pwd\`:" | glow
 echo "`pwd`" | glow
