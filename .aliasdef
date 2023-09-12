@@ -34,7 +34,7 @@ opgave_array=(	"klare papegøjen på pirathavnen"
 		"finde koden hos kartografen på vestmolen"
 		"snakke med den trehovedede abe i piratbaren på østmolen"
 		"åbne guldkisten i skibsværftet"
-		"åben simon milfreds kiste i vaskeriet"
+		"åbne simon milfreds kiste i vaskeriet"
 		)
 
 hvadnu() {
@@ -42,9 +42,9 @@ hvadnu() {
 	if [[ $pape = 1 ]]; then
 	  	opgave=$((opgave+1))
 	  	if [[ $lager = 1 ]]; then
-	    	opgave=$((opgave+1))
-	    	if [[ $gemmested = 1 ]]; then
-	      		opgave=$((opgave+1))
+	    		opgave=$((opgave+1))
+	    		if [[ $gemmested = 1 ]]; then
+	      			opgave=$((opgave+1))
 				if [[ $gemtbesked = 1 ]]; then
 					opgave=$((opgave+1))
 					if [[ $piratflag = 1 ]]; then
@@ -55,8 +55,10 @@ hvadnu() {
 								opgave=$((opgave+1))
 								if [[ $unicorn = 1 ]]; then
 									opgave=$((opgave+1))
-                    			fi
-                    		fi
+									echo "Du er klar til at komme ombord på piratskibet!"
+									break
+			                    			fi
+			                    		fi
 		  				fi
 					fi
 				fi
@@ -68,7 +70,7 @@ hvadnu() {
 
 cd() {
     if [[ "$@" == *"piratskibet" ]] || [[ "$@" == *"piratskibet/" ]]; then
-	if [[ "$(hvadnu)" == "${opgave_array[8]}" ]]; then
+	if [[ "$(hvadnu)" == "Du er klar til at komme ombord på piratskibet!" ]]; then
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
@@ -79,8 +81,7 @@ cd() {
 		echo
 		builtin cd "$@"
 	else
-		echo "Du er ikke klar til at komme ombord!"
-		echo "# $(hvadnu)"|glow
+		echo -e "# Du er ikke klar til at komme ombord!\n# $(hvadnu)"|glow
 	fi
     elif [[ "$@" == "gemmested" ]] || [[ "$@" == "gemmested/" ]]; then
         echo '
