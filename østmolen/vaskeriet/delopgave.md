@@ -3,8 +3,8 @@
 ### Gå på rov efter ord og tal på en hjemmeside
 - Til dette skal vi bruge en kommando der hedder ```cewl```.
 - ```cewl```: skal bruge nogle informationer, der skrives bagefter: 
-  1. hvis man skriver ```-d [tal]```, kan man angive hvor dybt der skal søges på hjemmesiden, et lavt tal er hurtig men man får ikke så mange ord. Her skal man prøve sig frem.
-     - måske er det nok med ```-d 1```, så bliver man hurtigt færdig og ellers må man prøve med et størrer tal.
+  1. hvis man skriver ```-d [tal]```, kan man angive hvor dybt der skal søges på hjemmesiden, et lavt tal er hurtigt men man får ikke så mange ord. Her skal man prøve sig frem.
+     - måske er det nok med ```-d 1```, så bliver man hurtigt færdig og ellers må man prøve med et større tal.
   2. til sidst skriver man ```-w [filnavn]``` som fortæller hvor alle ord og tal skal gemmes.
 
 ***Eksempel***
@@ -15,7 +15,7 @@
 - Nu er det din opgave at oprette en fil udfra hjemmesiden.
 - Prøv at læse den fil du har oprettet, så kan du se hvor mange muligheder der skal prøves af, for at gætte koden..!
 
-### For at åbne simons kiste skal vi bruge en lidt svære kommando: 
+### For at åbne simons kiste skal vi bruge en lidt sværere kommando: 
 - **Denne kommando hedder ```fcrackzip```.**
 - Nedenfor kan ses et eksempel, hvor der bruges minOrdbog, fra eksempelt ovenfor, til at åbne en fil der hedder ***låst.zip***:
 
