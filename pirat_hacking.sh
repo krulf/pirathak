@@ -21,7 +21,7 @@ if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install libmikmod3
 fi
 
-source pirathavn/.aliasdef-zsh
+source pirathavn/.aliasdef
 
 clear
 hjælp
