@@ -4,7 +4,11 @@
 hjem=$(pwd)/pirathavn
 
 hjælp() {
-    glow $hjem/.intro.md
+    glow $hjem/.hjælp.md
+}
+
+merehjælp() {
+    glow $hjem/.merehjælp.md
 }
 
 start() {
