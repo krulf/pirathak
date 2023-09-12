@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# Sæt hjem
+hjem=$(pwd)/pirathavn
+
+hjælp() {
+    glow $hjem/.intro.md
+}
+
+start() {
+    clear
+    cd $hjem
+    glow .intro.md
+}
+
 # Opgaverækkefølge
 export pape=0
 export lager=0
