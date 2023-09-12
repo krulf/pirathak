@@ -1,0 +1,60 @@
+#!/bin/zsh
+clear
+
+echo
+echo 'Et godt tip er at bruge piletasterne op og ned til at gå tilbage til kommandoer du tidligere har skrevet
+
+Du kan også bruge piletasterne højre og venstre til at gøre kommandoen med mørk skrift færdig.
+
+Du skal huske at lytte til kaptajnens kloge ord!
+
+'|sed -r 'G;:a;s/^(.)(.*\n)/\2\1/;ta;s/\n//'
+echo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Denne fil er et script og skal køres, se vodbinderiet.md
