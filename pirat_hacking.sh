@@ -11,6 +11,16 @@ if [ ! -f /etc/apt/keyrings/charm.gpg ]; then
 	echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
 fi
 
+dpkg -s fcrackzip #is glow installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install fcrackzip
+fi
+
+dpkg -s crunch #is glow installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install crunch
+fi
+
 dpkg -s glow #is glow installed?
 if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install glow
