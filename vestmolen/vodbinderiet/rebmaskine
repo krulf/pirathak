@@ -1,0 +1,21 @@
+#!/bin/zsh
+echo 
+echo "Maskinen ser rusten ud og har vist ikke kørt i mange år. Du trykker på knappen:"
+echo "# I / O"|glow
+echo 
+printf "Maskinen begynder at snurre"
+
+i=1
+
+while [[ i -lt 10 ]]; do
+	let "i+=1"
+	printf "."
+	sleep 0.5
+done
+sleep 1.5
+echo
+echo "Maskinen afgiver et KLONK og stopper."
+echo
+sleep 1
+echo "Du tror ikke at den fungerer."
+echo
