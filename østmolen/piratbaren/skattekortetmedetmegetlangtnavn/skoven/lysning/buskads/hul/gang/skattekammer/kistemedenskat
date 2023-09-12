@@ -1,10 +1,11 @@
 #!/bin/bash
+clear
 
-echo -e "Du finder hemmelige filer med: ls -a\n\nJeg gemte engang en besked ved afgrunden...">.hemmeligfil
+echo -e '\n\n\nDu finder hemmelige filer med: ls -a\n\nJeg gemte engang en besked ved afgrunden...>.hemmeligfil
 
 echo -e "# Kisten\n...åbner med en knagende lyd. Du kan som nævnt finde ud af hvor du er henne med \`pwd\`:" | glow
 echo "`pwd`" | glow
-echo "Men prøv engang \`tree\` kommandoen. Den giver dig et kort lige der hvor du er:" | glow
+echo "Men prøv engang at se hvad du kan med \`tree\` kommandoen. Den giver dig et kort lige der hvor du er:" | glow
 echo "$(tree -a)" | glow
 
 
