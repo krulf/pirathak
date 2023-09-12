@@ -83,7 +83,11 @@ cd() {
 		echo "# $(hvadnu)"|glow
 	fi
     elif [[ "$@" == "gemmested" ]] || [[ "$@" == "gemmested/" ]]; then
-        echo "Fedt du slap væk..!"
+        echo '
+Fedt du slap væk..!
+
+Husk at lave variablen gemmested=1 med:
+export gemmested=1'
     elif [[ -d pirathavn ]] && [[ "$@" == "pirathavn" ]] || [[ "$@" == "pirathavn/" ]]; then
 	echo $(date +%s)>$hjem/.starttime
 	echo
