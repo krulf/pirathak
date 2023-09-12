@@ -24,5 +24,6 @@ fi
 source pirathavn/.aliasdef
 
 clear
-hjælp
+glow pirathavn/.intro.md
+
 # if using bash bash --rcfile <(cat $HOME/.bashrc; echo 'export PROMPT_COMMAND="cd pirathak;source aliasdef; echo Skriv start;export PROMPT_COMMAND="') -i
