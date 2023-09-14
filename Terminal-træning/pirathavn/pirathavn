@@ -1,2 +1,0 @@
-
-Med cat får du vist en tekstfil. Hvis du vil læse den fulde beskrivelse af pirathavnen formateret som markdown (filnavne ender med .md). Kommandoen `glow` kan også vise almindelige filer, prøv `glow pirathavn` og `glow pirathavn.md`
