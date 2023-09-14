@@ -14,5 +14,5 @@ Han kiggede ud over forsamlingen af pirater, der var blevet fanget af hans fort�
 
 Med det afsluttede kaptajnen sin fortælling, og baren fyldtes igen af latter, druk og sange. Piraterne havde lært en ny hemmelighed om deres trofaste redskaber i skattejagten på de digitale have.
 
-Kan du ikke se starten? Af teksten, prøv med: `glow -p filnavn`
+Kan du ikke se starten? Prøv med: `glow -p filnavn`
 Du kan bruge `piletasterne` og lukker glow med `q`
