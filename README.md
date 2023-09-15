@@ -8,8 +8,8 @@
     1. PING
     2. SSH
     3. HYDRA -> finder password til ESP (opgave 2.)
- 2. Esp opgaver - evt med WEP sikkerhed/ protokol. Vi bruger wifite til at knække koderne med:
-    1. logge ind på et wifi og få en portal. Koden er i opgavebeskrivelsen, portalen viser hvad der skal eksporteres
+ 2. Esp opgaver - evt med WEP sikkerhed/ protokol. Vi bruger wifite til at knække koderne med(En Esp connector på skift til de access points der er sat op):
+    1. logge ind på et wifi og få en portal. Koden kommer fra ssh opgaven, portalen viser hvad der skal eksporteres
     2. tegn ordbog. Opgavebeskrivelsen beskriver hvor mange tegn kodeordet er på. Portalen viser en hjemmeside hvordan den sidste ESP brydes op.
     3. cewlopgave hvor der høstes ordbog på en side til at brute
     4.
