@@ -7,10 +7,10 @@
    - portal dimensionering, tekst og billede tilpasning 
    - opsætning af ssid og password
 
-### Esp2 (SSID: ???, Password: ???)
+### Esp2 (SSID: "Det_Røde_Skib", Password: ???)
 - TODO: Alt...
 
-### Esp3 (SSID: ???, Password: ???)
+### Esp3 (SSID: "Det_Grønne_Skib", Password: ???)
 - TODO: Alt...
 
 
