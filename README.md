@@ -1,10 +1,10 @@
 # ESP-IDF projekter
 
-### Esp1: (SSID: "Blue Ship", Password: "kikkert")
+### Esp1: (SSID: "Blue Ship", Password: "kikkerter")
 - viser en portal med et brændende blåt neon piratskib -> med en Øv besked
 - ```export blue_ship=1``` 
 
-### Esp2 (SSID: "Det_Grønne_Skib", Password: ???)
+### Esp2 (SSID: "Green Ship", Password: "stjerner")
 - viser en portal med et brændende grønt neon piratskib
 - ```export klo=1```
 - TODO:
