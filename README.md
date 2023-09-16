@@ -1,11 +1,8 @@
 # ESP-IDF projekter
 
-### Esp1: (SSID: "Det_Blå_Skib", Password: "totalsvær")
-- viser en portal med et brændende neon piratskib -> med en Øv besked 
-- TODO:
-   - exporter tekst -> sænk skibet knap -> toast besked
-   - portal dimensionering, tekst og billede tilpasning 
-   - opsætning af ssid og password
+### Esp1: (SSID: "Blue Ship", Password: "kikkert")
+- viser en portal med et brændende neon piratskib -> med en Øv besked
+- ```export blue_ship=1``` 
 
 ### Esp2 (SSID: "Det_Røde_Skib", Password: ???)
 - TODO: Alt...
