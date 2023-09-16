@@ -8,7 +8,7 @@
 - viser en portal med et brændende grønt neon piratskib
 - ```export klo=1```
 
-### Esp3 (SSID: "Det_Røde_Skib", Password: "skattekort")
+### Esp3 (SSID: "Red Ship", Password: "skattekort")
 - ```export piratfisk=1```
 - TODO:
   - Mangler billede af rødt brændende skib
