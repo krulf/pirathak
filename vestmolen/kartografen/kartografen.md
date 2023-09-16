@@ -18,7 +18,7 @@ Arrr, I værdige skattejægere, klar til en mysterisk opgave? Hør nu godt efter
 
 5. Brug kommandoen `cat` til at se indholdet af billedet, Hvad ser du? ***Hint:*** Du vil sandsynligvis se en masse uforståelig tekst.
 
-6. Men frygt ej, vores skattekort indeholder et specielt ord, en kode, der vil afsløre skattens skjulested. Brug kommandoen `grep` til at søge efter ordet ```kode``` i billedets data. Dette gøres ved at bruge en *pibe* så komandoen ser ud som følger: ```cat billede.png | grep kode```. Hvad er resultatet? Findes koden?
+6. Men frygt ej, vores skattekort indeholder et specielt ord, en kode, der vil afsløre skattens skjulested. Brug kommandoen `grep` til at søge efter ordet ```kode``` i billedets data. Dette gøres ved at bruge en *pibe* så komandoen ser ud som følger: ```cat billede.png | grep -a kode```. Hvad er resultatet? Findes koden?
 
 7. Hvis du har fundet koden, skriv den ned. Hvis ikke, prøv igen med andre kommandoer eller undersøg, om du har skrevet kommandoerne korrekt.
 
