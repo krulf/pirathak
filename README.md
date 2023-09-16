@@ -7,11 +7,11 @@
 ### Esp2 (SSID: "Green Ship", Password: "stjerner")
 - viser en portal med et brændende grønt neon piratskib
 - ```export klo=1```
-- TODO:
-  - Øv besked skal opdateres
 
-### Esp3 (SSID: "Det_Røde_Skib", Password: ???)
-- TODO: Alt...
+### Esp3 (SSID: "Det_Røde_Skib", Password: "skattekort")
+- ```export piratfisk=1```
+- TODO:
+  - Mangler billede af rødt brændende skib
 
 
 ### Esp-client (forbind på skift til Esp2 og Esp3)
