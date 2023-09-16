@@ -15,4 +15,4 @@
 
 
 ### Esp-client (forbind på skift til Esp2 og Esp3)
-- TODO: Alt...
+- Forbinder til hvert "skib" på skift med kort mellemrum
