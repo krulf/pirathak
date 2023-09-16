@@ -1,0 +1,19 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "esp_netif.h": "c",
+        "modbus.h": "c",
+        "mqtt_client.h": "c",
+        "mqtt.h": "c",
+        "esp_wifi.h": "c",
+        "wifi.h": "c",
+        "nvs_flash.h": "c",
+        "mywifi.h": "c",
+        "string.h": "c",
+        "mbcontroller.h": "c",
+        "gpio.h": "c",
+        "mymodbus.h": "c"
+    },
+    "idf.portWin": "COM3",
+    "idf.flashType": "UART"
+}

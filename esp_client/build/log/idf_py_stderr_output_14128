@@ -1,0 +1,111 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.2.1 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c0d4: uart_tx_one_char_uart.part.0 in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpp5g_cgho"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpp5g_cgho': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpyjm9h6_8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpyjm9h6_8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpyuzv5xb8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpyuzv5xb8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmp9i2bzl3u"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmp9i2bzl3u': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmp0jyx_tj6"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmp0jyx_tj6': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpfowmdwgg"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpfowmdwgg': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpv89g6xdj"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpv89g6xdj': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x403806f2: panic_abort at C:/Users/allan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40386b3c: __ubsan_include at C:/Users/allan/esp/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\coding_pirates\\hacking\\esp-projekter\\esp_client\\build\\ESP32-Client.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\allan\\AppData\\Local\\Temp\\tmpgu770p7h"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\allan\\AppData\\Local\\Temp\\tmpgu770p7h': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0m
