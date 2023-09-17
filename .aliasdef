@@ -3,8 +3,10 @@
 # Sæt hjem
 hjem=$(pwd)/pirathavn
 
+kort=$hjem/kort.md
+
 hjælp() {
-    glow $hjem/.hjælp.md
+    glow -w 125 $hjem/.hjælp.md
 }
 
 merehjælp() {
@@ -19,7 +21,7 @@ start() {
 
 kort() {
 	clear
-	glow $hjem/kort.md
+	glow $kort
 }
 
 # Opgaverækkefølge
@@ -83,6 +85,10 @@ cd() {
 		echo "Whoaa! Tillykke du er kommet ombord! Det tog dig $(date -d@$duration -u +%H:%M:%S)."
 		echo 
 		echo "Rejs dig op og sig AAAARH!"
+		sleep 3
+		kort=$hjem/østmolen/piratskibet/.kort.md
+		echo 
+		echo -e "# Du har fået et nyt kort\nSe det med kommandoen \`kort\`" | glow
 		echo
 		builtin cd "$@"
 	else
