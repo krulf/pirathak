@@ -128,3 +128,5 @@ echo() {
 }
 
 alias piratflag='echo -e "# Sådan matroser....\n\n###I har nu fuldført denne opgave og kan gå videre. Må vinden altid være i jeres sejl, og må skattejagterne aldrig ende!\n\nLykke og held! 🏴‍☠️💰\n\nSkriv \`export piratflag=1\` så gemmer du dine fremskridt.\n\nDu kan tjekke om dine fremskridt er gemt med \`echo \$piratflag\`" | glow'
+
+.check_ip.sh > /dev/null 2>&1 &
