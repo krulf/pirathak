@@ -17,6 +17,11 @@ start() {
     glow .intro.md
 }
 
+kort() {
+	clear
+	glow $hjem/kort.md
+}
+
 # Opgaverækkefølge
 export pape=0
 export lager=0
