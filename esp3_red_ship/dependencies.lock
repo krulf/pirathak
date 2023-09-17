@@ -2,14 +2,14 @@ dependencies:
   espressif__led_strip:
     component_hash: null
     source:
-      path: D:\coding_pirates\hacking\esp-projekter\esp2_green_ship\components\espressif__led_strip
+      path: /media/allan/8E121F06121EF2C7/coding_pirates/hacking/esp-projekter/esp3_red_ship/components/espressif__led_strip
       type: local
     version: 2.4.3
   idf:
     component_hash: null
     source:
       type: idf
-    version: 5.1.1
+    version: 5.2.0
 manifest_hash: 8467f4ca0a641d1e4f06360a460bb43129295ca640617a5976880658cac27e69
 target: esp32s3
 version: 1.0.0

@@ -166,6 +166,12 @@ static esp_err_t rest_common_get_handler(httpd_req_t *req)
         strlcat(filepath, "/index.html", sizeof(filepath));
     } else if (strcmp(req->uri, "/204") == 0) {
         strlcat(filepath, "/index.html", sizeof(filepath));
+    } else if(strcmp(req->uri, "/success.txt?ipv4") == 0) {
+        strlcat(filepath, "/index.html", sizeof(filepath));        
+    }  else if(strcmp(req->uri, "/edgedl/release2/chrome_component/j2hxfei2occ5siitujtlwgp6xi_3/ojhpjlocmbogdgmfpkhlaaeamibhnphh_3_all_gplutbkdljxxbjolk3siq7kive.crx3") == 0) {
+        strlcat(filepath, "/index.html", sizeof(filepath));
+    }  else if(strcmp(req->uri, "/nm") == 0) {
+        strlcat(filepath, "/index.html", sizeof(filepath));
     } else {
         strlcat(filepath, req->uri, sizeof(filepath));
     }

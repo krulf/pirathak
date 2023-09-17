@@ -36,14 +36,27 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id
 {
   if (event_id == WIFI_EVENT_AP_STACONNECTED)
   {
-    wifi_event_ap_staconnected_t *event = (wifi_event_ap_staconnected_t *)event_data;
-    ESP_LOGI(TAG, "station " MACSTR " join, AID=%d", MAC2STR(event->mac), event->aid);
-    flash_yellow();
-    rgb_led_set_color(128, 0, 0);
-  }
-  else if (event_id == WIFI_EVENT_AP_STADISCONNECTED)
-  {
-    // Dont do anything for now
+    if (event_id == WIFI_EVENT_AP_STACONNECTED)
+    {
+      wifi_event_ap_staconnected_t *event = (wifi_event_ap_staconnected_t *)event_data;
+      ESP_LOGI(TAG, "station " MACSTR " join, AID=%d", MAC2STR(event->mac), event->aid);
+
+      // Client MAC: 7c:df:a1:d5:c2:a8
+      if (!(event->mac[0] == 0x7c && event->mac[1] == 0xdf && event->mac[2] == 0xa1 && event->mac[3] == 0xd5 && event->mac[4] == 0xc2 && event->mac[5] == 0xa8))
+      {
+        flash_yellow();
+      }
+      else
+      {
+        rgb_led_set_color(255, 255, 255);
+        vTaskDelay(pdMS_TO_TICKS(200));
+      }
+      rgb_led_set_color(128, 0, 0);
+    }
+    else if (event_id == WIFI_EVENT_AP_STADISCONNECTED)
+    {
+      // Dont do anything for now
+    }
   }
 }
 
