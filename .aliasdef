@@ -73,7 +73,7 @@ hvadnu() {
 								if [[ $unicorn = 1 ]]; then
 									opgave=$((opgave+1))
 									echo "Du er klar til at komme ombord på piratskibet!"
-									exit 0
+									return
 			                    			fi
 			                    		fi
 		  				fi
