@@ -54,7 +54,7 @@ opgave_array=(	"klare papegøjen på pirathavnen"
 		)
 
 hvadnu() {
-    if [[ hxr = 0 ]]; then
+    if [[ $hxr = 0 ]]; then
 	opgave=1
 	if [[ $pape = 1 ]]; then
 	  	opgave=$((opgave+1))
