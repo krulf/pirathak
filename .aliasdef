@@ -37,9 +37,10 @@ export abe=0
 export guldkiste=0
 export unicorn=0
 
-hxr_array=(	"finde ud af hvilken IP-adresse havnens server har"
+hxr_array=(	"finde ud af hvilken IP-adresse havnens server har, kig i kaptajnens kabys"
 		"finde koden til serveren. Du lægger mærke til at sedlen med IP-adresser fra opslagstavlen har Jørgen Tietzes brugernavn \`jtietze\` - brug cewl på Jørgen Tietzes hjemmeside for at finde koden. Han elsker lange kodeord, så det skal mindst være 12 karakterer langt. Kan du huske hvordan cewl virker? Tjek kommandoen med \`hjælp\`"
-		"logge ind på serveren for at få næste opgave. Du skal bruge kommandoen \`ssh\` "
+		"finde ud af hvad koden til serveren er. Brug brute-force værtkøjet hydra, som beskrevet i \`hjælp\`. Når du har fundet koden skal du eksportere den med: \`export PASSWD=\` efterfulgt af koden"
+		"logge ind på serveren med IP-adressen, brugernavnet og kodeordet du har fundet. Se hvordan kommandoen \`ssh\` virker i \`hjælp\`"
 )
 
 opgave_array=(	"klare papegøjen på pirathavnen"
