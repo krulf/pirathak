@@ -2,9 +2,9 @@
 
 Du skal finde ud af hvilken af havnens servere der kører. Du kan se der hænger et opslag med 5 IP-adresser på opslagstavlen:
 
- - 192.168.1.223
- - 192.168.1.133
- - 192.168.1.2
+ - 192.168.1.73
+ - 192.168.1.13
+ - 192.168.1.29
  - 192.168.1.44
  - 192.168.1.34
  
