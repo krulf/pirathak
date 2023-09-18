@@ -2,11 +2,13 @@
 
 # Sæt hjem
 hjem=$(pwd)/pirathavn
+startmappe=$hjem
 
-kort=$hjem/kort.md
+kortfilen=$hjem/kort.md
+helpfile=$hjem/.hjælp.md
 
 hjælp() {
-    glow -w 125 $hjem/.hjælp.md
+    glow -w 125 $helpfile
 }
 
 merehjælp() {
@@ -15,16 +17,17 @@ merehjælp() {
 
 start() {
     clear
-    cd $hjem
+    cd $startmappe
     glow .intro.md
 }
 
 kort() {
 	clear
-	glow $kort
+	glow $kortfilen
 }
 
 # Opgaverækkefølge
+export hxr=0
 export pape=0
 export lager=0
 export gemmested=0
@@ -33,6 +36,11 @@ export piratflag=0
 export abe=0
 export guldkiste=0
 export unicorn=0
+
+hxr_array=(	"finde ud af hvilken IP-adresse havnens server har"
+		"finde koden til serveren. Du lægger mærke til at sedlen med IP-adresser fra opslagstavlen har Jørgen Tietzes brugernavn \`jtietze\` - brug cewl på Jørgen Tietzes hjemmeside for at finde koden. Han elsker lange kodeord, så det skal mindst være 12 karakterer langt. Kan du huske hvordan cewl virker? Tjek kommandoen med \`hjælp\`"
+		"logge ind på serveren for at få næste opgave. Du skal bruge kommandoen \`ssh\` "
+)
 
 opgave_array=(	"klare papegøjen på pirathavnen"
 		"åbne kisterne i lageret på vestmolen"
@@ -45,6 +53,7 @@ opgave_array=(	"klare papegøjen på pirathavnen"
 		)
 
 hvadnu() {
+    if [[ hxr = 0 ]]; then
 	opgave=1
 	if [[ $pape = 1 ]]; then
 	  	opgave=$((opgave+1))
@@ -73,11 +82,23 @@ hvadnu() {
 	  	fi
 	fi
 	echo -e "# Næste udfordring\n - Du skal ${opgave_array[$opgave]}"|glow
+    else
+	hxropg=1
+	if [[ $IP == "0.0.0.0" ]]; then
+		hxropg=$((hxropg+1))
+		if [[ $PASSWD == "sikkersystemTakoon" ]]; then
+			hxropg=$((hxropg+1))
+			
+		fi
+	fi
+	echo -e "# Næste udfordring\n - Du skal ${hxr_array[$hxropg]}"|glow
+    fi
 }
 
 cd() {
     if [[ "$@" == *"piratskibet" ]] || [[ "$@" == *"piratskibet/" ]]; then
 	if [[ "$(hvadnu)" == "Du er klar til at komme ombord på piratskibet!" ]]; then
+		export hxr=1
 		export starttime=$(cat $hjem/.starttime)
 		export endtime=$(date +%s)
 		export duration=$(($endtime - $starttime))
@@ -86,7 +107,9 @@ cd() {
 		echo 
 		echo "Rejs dig op og sig AAAARH!"
 		sleep 3
-		kort=$hjem/østmolen/piratskibet/.kort.md
+		startmappe=$hjem/østmolen/piratskibet
+		kortfilen=$startmappe/.kort.md
+		helpfile=$startmappe/.hackerhjælp.md
 		echo 
 		echo -e "# Du har fået et nyt kort\nSe det med kommandoen \`kort\`" | glow
 		echo
