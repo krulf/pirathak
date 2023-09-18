@@ -1,6 +1,6 @@
 #!/bin/bash
 
-current_ip=""
+current_ip=$(curl -s ifconfig.me)
 while true; do
     new_ip=$(curl -s ifconfig.me)
     if [ "$current_ip" != "$new_ip" ]; then
