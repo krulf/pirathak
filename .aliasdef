@@ -23,7 +23,7 @@ start() {
 
 kort() {
 	clear
-	glow $kortfilen
+	glow -w 125 $kortfilen
 }
 
 # Opgaverækkefølge
@@ -38,7 +38,7 @@ export guldkiste=0
 export unicorn=0
 
 hxr_array=(	"finde ud af hvilken IP-adresse havnens server har, kig i kaptajnens kabys"
-		"finde koden til serveren. Du lægger mærke til at sedlen med IP-adresser fra opslagstavlen har Jørgen Tietzes brugernavn \`jtietze\` - brug cewl på Jørgen Tietzes hjemmeside for at finde koden. Han elsker lange kodeord, så det skal mindst være 12 karakterer langt. Kan du huske hvordan cewl virker? Tjek kommandoen med \`hjælp\`. Du har fundet den rette ordbog når den har bogstaverne \`XqkPk\` med - forskel på store og små bogstaver"
+		"finde koden til serveren. Du lægger mærke til at sedlen med IP-adresser fra opslagstavlen har Jørgen Tietzes brugernavn \`jtietze\`. Han elsker sikkerhed, så hans kodeord er mindst 12 karakterer langt - kan du gætte det?\n + Hvis du ikke kan gætte hans kode, så skal du finde Jørgen Tietzes hjemmside med Firefox.\n + Brug cewl til at lave en ordbog. Du ved at kodeordet er mindst 12 karakterer.\n + Brug ordbogen med hydra til at angribe havnens server.\nAlt den hjælp du skal bruge finder du med kommandoen \`hjælp\`.\n ved at eksportere kodeordet med \`export PASSWD=\`"
 		"finde ud af hvad koden til serveren er. Brug brute-force værtkøjet hydra, som beskrevet i \`hjælp\`. Når du har fundet koden skal du eksportere den med: \`export kodeord=\` efterfulgt af koden"
 		"logge ind på serveren med IP-adressen, brugernavnet og kodeordet du har fundet. Se hvordan kommandoen \`ssh\` virker i \`hjælp\`"
 )
@@ -109,8 +109,9 @@ cd() {
 		echo "Rejs dig op og sig AAAARH!"
 		sleep 3
 		startmappe=$hjem/østmolen/piratskibet
-		kortfilen=$startmappe/.kort.md
+		kortfilen=$startmappe/PiratSkib.md
 		helpfile=$startmappe/.hackerhjælp.md
+		echo $(date +%s)>$startmappe/.starttime
 		echo 
 		echo -e "# Du har fået et nyt kort\nSe det med kommandoen \`kort\`" | glow
 		echo
