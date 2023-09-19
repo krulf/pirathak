@@ -23,4 +23,8 @@ For at knække deres wifi, må vi finde nogle informationer om Jack Sparrow, som
 - Så får man en ordbog med de information man har trykket ind, blandet og kombineret på forskellige måder.
 
 ### Find nogle oplysninger om Jack Sparrow og generer en ordbog, eventuelt prøv at læse filen og se hvad den indeholder...!
+
+- Herefter skal du bruge ordbogen til at logge ind på det røde skibs wifi, der ligger en guide i lastrummet, der beskriver hvordan du bruger din ordbog. men husk på ordbog ligger i den mappe hvor du brugte kommandoen ```cupp```...!
+  - Hvis du vil flytte ordbogen ud i lastrummet skal du bruge kommandoen ```mv jack.txt ../jack.txt```
+
 ### God eventyrlyst
