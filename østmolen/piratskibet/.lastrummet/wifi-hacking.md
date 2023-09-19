@@ -15,3 +15,12 @@ Når du skal køre wifite som sudo skriver du derfor:
 
 `sudo wifite -e [ESSID] --dict [filnavn-til-ordbog]`
 
+## Genopret forbindelsen til WiFi/ internet
+
+Så snart du begynder at overvåge WiFi-signaler med netværkskortet, er det i `monitor mode`. Derfor bliver du koblet fra eksisterende WiFi-netværk og har ingen internetforbindelse. Hvis du vil stoppe med at overvåge WiFi signaler og koble på internettet igen skal du skifte til `managed mode` med følgende kommando:
+
+`sudo airmon-ng stop wlan0mon`
+
+Hvis det har været nødvendigt for wifite at slå programmet der håndterer netværk på computeren ned også, kan det startes med:
+
+`sudo systemctl start NetworkManager`
