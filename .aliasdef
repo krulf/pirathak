@@ -41,8 +41,8 @@ hxr_array=(	"finde ud af hvilken IP-adresse havnens server har, kig i kaptajnens
 		"finde koden til serveren.\n\nDu lægger mærke til at sedlen med IP-adresser fra opslagstavlen har Jørgen Tietzes brugernavn \`jtietze\`. Han elsker sikkerhed, så hans kodeord er mindst 12 karakterer langt - kan du gætte det?\n\nDu kan prøve at logge på havnens server med ssh. Find hjælp til kommandoen med \`hjælp\`\n # Angrib havnens server\n - Hvis du ikke kan gætte hans kode, så skal du finde Jørgen Tietzes hjemmside med Firefox.\n - Brug cewl til at lave en ordbog. Du ved at kodeordet er mindst 12 karakterer.\n - Brug ordbogen med hydra til at angribe havnens server.\n\nAlt den hjælp du skal bruge til kommandoerne \`cewl og hydra\` finder du med kommandoen \`hjælp\`\n\n Husk der er forskel på store og små bogstaver. Afslut ved at eksportere kodeordet med \`export kodeord=\`\n"
 		"logge på havnens server med \`ssh\`, du kender brugernavn, kodeord og IP-adresse."
 		"koble på det wifi med de oplysninger du fandt på havnekontorets computer."
-		"følge guiden på den hjemmeside som blev åbnet da du loggede på de grønne skibs wifi"
-		"følge guiden på den hjemmeside som blev åbnet da du loggede på det røde skibs wifi"
+		"Smut i lastrummet, og hen til det grønne vindue, herfra skal du forsøge at komme ombord på det grønne skibs wifi"
+		"Nu skal du over til det røde vindue, og besejre det røde skibs wifi"
 )
 
 opgave_array=(	"klare papegøjen på pirathavnen"
