@@ -16,4 +16,4 @@ Til denne opgave skal vi bruge de wifi informationer der blev fundet på havneko
 ### Login på WiFi
 
 - Først skal tjekke om vi kan se det wifi vi skal logge på. For at tjekke tilgængelige wifi, bruger vi kommandoen ```nmcli dev wifi list```, så skrives der en liste af tilgængelige wifi. når man har læst listen, trykker man på ***q*** for at afslutte kommandoen, så man kan bruge terminalen igen.
-- For at forbinde til et wifi, skal vi bruge en ***connect*** kommando: ```nmcli dev wifi connect 'Green Ship'```
+- For at forbinde til et wifi, skal vi bruge en ***connect*** kommando: ```nmcli dev wifi connect 'Green Ship'```, herefter kommer der et vindue op, hvor der skal skrives det password du fandt på havnekontorets computer.
