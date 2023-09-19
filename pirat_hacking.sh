@@ -42,6 +42,7 @@ if [[ $? == 1 ]]; then
 fi
 
 source pirathavn/.aliasdef
+sleep 0.5
 
 clear
 glow pirathavn/.intro.md
