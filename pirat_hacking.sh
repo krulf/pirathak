@@ -11,6 +11,21 @@ if [ ! -f /etc/apt/keyrings/charm.gpg ]; then
 	echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
 fi
 
+dpkg -s hxcdumptool #is hxcdumptool installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install hxcdumptool
+fi
+
+dpkg -s hxctools #is hxctools installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install hxctools
+fi
+
+dpkg -s nodejs #is nodejs installed?
+if [[ $? == 1 ]]; then
+	sudo apt update && sudo apt install nodejs
+fi
+
 dpkg -s cupp #is cupp installed?
 if [[ $? == 1 ]]; then
 	sudo apt update && sudo apt install cupp
