@@ -128,6 +128,9 @@ cd() {
 		echo -e "# Du har fået et nyt kort\nSe det med kommandoen \`kort\`" | glow
 		echo
 		builtin cd "$@"
+	elif [[ $hxr -eq 1 ]]; then
+		builtin cd "$@"
+		hvadnu
 	else
 		echo -e "# Du er ikke klar til at komme ombord!\n$(hvadnu)"|glow
 	fi
