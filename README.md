@@ -5,6 +5,8 @@
 ### VirtualBox med Vagrant
 
 1. Installerer VirtualBox og Vagrant
+   - https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
+   - https://www.virtualbox.org/wiki/Downloads
 2. Download `Vagrantfile` fra repository, til en lokal mappe
 3. åben en terminal i mappen:
    - Start VM box: `vagrant up`
