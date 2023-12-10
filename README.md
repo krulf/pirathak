@@ -1,6 +1,16 @@
 # pirathak
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+### VirtualBox med Vagrant
+
+1. Installerer VirtualBox og Vagrant
+2. Download `Vagrantfile` fra repository, til en lokal mappe
+3. åben en terminal i mappen:
+   - Start VM box: `vagrant up`
+   - Konfigurer VM box: `vagrant provision`
+   - Start pirathaven: `vagrant ssh`
+
+
 ### TODO
 
  - Kort over piratskibet
