@@ -12,6 +12,8 @@
    - Start VM box: `vagrant up`
    - Konfigurer VM box: `vagrant provision`
    - Start pirathaven: `vagrant ssh`
+   - ######################################
+   - oprydning: `vagrant destroy`
 ---
 
 ### TODO
