@@ -1,6 +1,7 @@
 # pirathak
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+---
 ### VirtualBox med Vagrant
 
 1. Installerer VirtualBox og Vagrant
@@ -9,7 +10,7 @@
    - Start VM box: `vagrant up`
    - Konfigurer VM box: `vagrant provision`
    - Start pirathaven: `vagrant ssh`
-
+---
 
 ### TODO
 
